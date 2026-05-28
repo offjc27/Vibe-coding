@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green&Blue - Recibo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="recibo">
+
+    <!-- ===== CABECERA ===== -->
+    <div class="cabecera">
+
+        <!-- Logo -->
+        <div class="col-logo">
+            <img id="logo" src="Green_Blue.png" alt="Green&Blue Aquamarine">
+            <p class="slogan">Efecto y prevención en la funcionalidad física</p>
+        </div>
+
+        <!-- Centro: servicios + teléfono + fechas -->
+        <div class="col-centro">
+            <div class="servicios">
+                <label><input type="checkbox"> REHABILITACIÓN</label>
+                <label><input type="checkbox"> ENTRETENIMIENTO</label>
+                <label><input type="checkbox"> MASAJES</label>
+                <label><input type="checkbox"> NATACIÓN</label>
+            </div>
+            <div class="telefono">
+                &#9742; 318 868 8008 / 310 740 6038
+            </div>
+            <div class="fechas-row">
+                <div class="fecha-grupo">
+                    <span class="fecha-lbl">Fecha<br>Inicio</span>
+                    <input type="text" class="fbox" maxlength="2" placeholder="DD">
+                    <input type="text" class="fbox" maxlength="2" placeholder="MM">
+                    <input type="text" class="fbox" maxlength="2" placeholder="AA">
+                </div>
+                <div class="fecha-grupo">
+                    <span class="fecha-lbl">Fecha<br>Finalización</span>
+                    <input type="text" class="fbox" maxlength="2" placeholder="DD">
+                    <input type="text" class="fbox" maxlength="2" placeholder="MM">
+                    <input type="text" class="fbox" maxlength="2" placeholder="AA">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-recibo">
+            <div class="recibo-label-top">RECIBO</div>
+            <div class="recibo-box">
+                <span class="no-lbl">N<sup>o</sup></span>
+                <span class="no-val">0456</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fila">
+        <span class="lbl">Señor (es):</span>
+        <input type="text" class="inp flex2">
+        <span class="lbl sep">Dirección:</span>
+        <input type="text" class="inp flex2">
+    </div>
+
+    <div class="fila">
+        <span class="lbl">Teléfono:</span>
+        <input type="text" class="inp flex1p5">
+        <span class="lbl sep">Ciudad:</span>
+        <input type="text" class="inp flex1">
+        <span class="lbl sep">Edad:</span>
+        <input type="text" class="inp flex05">
+        <span class="lbl sep">Peso:</span>
+        <input type="text" class="inp flex05">
+        <span class="lbl sep">Talla:</span>
+        <input type="text" class="inp flex05">
+        <span class="lbl sep">PPL:</span>
+        <input type="text" class="inp flex05">
+    </div>
+
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th class="th-desc">DESCRIPCIÓN</th>
+                <th class="th-vr">VR. TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr-desc">
+                <td><input type="text" class="inp-tabla"></td>
+                <td><input type="text" class="inp-tabla"></td>
+            </tr>
+            <tr class="tr-desc">
+                <td><input type="text" class="inp-tabla"></td>
+                <td><input type="text" class="inp-tabla"></td>
+            </tr>
+            <tr class="tr-desc">
+                <td><input type="text" class="inp-tabla"></td>
+                <td><input type="text" class="inp-tabla"></td>
+            </tr>
+            <tr class="tr-desc">
+                <td><input type="text" class="inp-tabla"></td>
+                <td><input type="text" class="inp-tabla"></td>
+            </tr>
+
+            <tr class="tr-obs">
+                <td class="td-obs">
+                    <div class="obs-titulo">OBSERVACIONES</div>
+                    <textarea class="textarea-obs"></textarea>
+                </td>
+                <td class="td-obs-vr"></td>
+            </tr>
+            <tr class="tr-total">
+                <td class="td-total-lbl">TOTAL</td>
+                <td class="td-total-val">
+                    <span class="signo">$</span>
+                    <input type="text" class="inp-tabla">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="firmas">
+        <div class="firma">
+            <div class="linea-firma"></div>
+            <div class="lbl-firma">FIRMA DEL INSTRUCTOR</div>
+        </div>
+        <div class="firma">
+            <div class="linea-firma"></div>
+            <div class="lbl-firma">FIRMA DEL USUARIO</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
