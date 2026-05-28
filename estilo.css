@@ -334,3 +334,33 @@ body {
     color: #2e7d32;
     letter-spacing: 0.3px;
 }
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botones button {
+    padding: 7px 16px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid #1a6fa8;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    color: #1a6fa8;
+    transition: all 0.2s;
+}
+
+.botones button:hover {
+    background: #1a6fa8;
+    color: white;
+}
+
+
+@media print {
+    body { background: white; padding: 0; }
+    .botones { display: none; }
+}

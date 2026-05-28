@@ -10,16 +10,15 @@
 
 <div class="recibo">
 
-    <!-- ===== CABECERA ===== -->
+
     <div class="cabecera">
 
-        <!-- Logo -->
+
         <div class="col-logo">
             <img id="logo" src="Green_Blue.png" alt="Green&Blue Aquamarine">
             <p class="slogan">Efecto y prevención en la funcionalidad física</p>
         </div>
 
-        <!-- Centro: servicios + teléfono + fechas -->
         <div class="col-centro">
             <div class="servicios">
                 <label><input type="checkbox"> REHABILITACIÓN</label>
@@ -132,7 +131,36 @@
         </div>
     </div>
 
+<div class="botones">
+    <button onclick="limpiar()">Limpiar</button>
+    <button onclick="window.print()">Guardar como PDF</button>
 </div>
+</div>
+<script>
 
+    const inputsVr = document.querySelectorAll('.tr-desc td:last-child .inp-tabla');
+    const inputTotal = document.querySelector('.td-total-val .inp-tabla');
+
+    inputsVr.forEach(input => {
+        input.addEventListener('input', calcularTotal);
+    });
+
+    function calcularTotal() {
+        let suma = 0;
+        inputsVr.forEach(input => {
+            const valor = parseFloat(input.value.replace(',', '.')) || 0;
+            suma += valor;
+        });
+        inputTotal.value = suma.toLocaleString('es-CO');
+    }
+
+
+    function limpiar() {
+        if (!confirm('¿Deseas limpiar todos los campos?')) return;
+        document.querySelectorAll('input[type="text"]').forEach(i => i.value = '');
+        document.querySelectorAll('textarea').forEach(t => t.value = '');
+        document.querySelectorAll('input[type="checkbox"]').forEach(c => c.checked = false);
+    }
+</script>
 </body>
 </html>
