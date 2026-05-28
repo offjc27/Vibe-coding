@@ -66,7 +66,7 @@ body {
 .servicios label {
     font-size: 9.5px;
     font-weight: bold;
-    color: #1a6fa8;
+    color: #1aa82d;
     display: flex;
     align-items: center;
     gap: 3px;
@@ -84,7 +84,7 @@ body {
 .telefono {
     font-size: 10.5px;
     font-weight: bold;
-    color: #2e7d32;
+    color: #1a6fa8;
 }
 
 .fechas-row {
@@ -96,7 +96,6 @@ body {
 .fecha-grupo {
     display: flex;
     align-items: center;
-    gap: 2px;
 }
 
 .fecha-lbl {
